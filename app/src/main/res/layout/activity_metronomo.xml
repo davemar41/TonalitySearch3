@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3E0DB"
+    tools:context=".Metronomo">
+    <TextView
+        android:id="@+id/textbeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="165dp"
+        android:layout_marginEnd="175dp"
+        android:layout_marginRight="175dp"
+        android:text="Beat"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editbeat"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginRight="162dp"
+        android:background="#FFFFFF"
+        android:ems="4"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textbeat"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/mas"
+        android:layout_width="66dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="253dp"
+        android:layout_marginLeft="253dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="89dp"
+        android:layout_marginRight="89dp"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/massedit" />
+
+    <ImageButton
+        android:id="@+id/menos"
+        android:layout_width="66dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="89dp"
+        android:layout_marginRight="89dp"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/editbeat"
+        app:layout_constraintTop_toBottomOf="@+id/mas"
+        app:srcCompat="@drawable/menoss2edit" />
+
+    <GridLayout
+        android:id="@+id/gridLayout2"
+        android:layout_width="328dp"
+
+
+        android:layout_height="94dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginRight="43dp"
+        android:layout_marginBottom="144dp"
+        android:background="#D6D3D3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/metronomo">
+
+
+        <Button
+            android:id="@+id/play"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="166dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+
+            android:text="@string/play"
+            android:textColor="@color/black"
+            app:backgroundTint="#268AC5" />
+
+        <Button
+            android:id="@+id/stop"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="166dp"
+            android:layout_height="wrap_content"
+            android:text="@string/stop"
+            android:textColor="@color/black"
+            app:backgroundTint="#268AC5" />
+
+        <Button
+            android:id="@+id/volver3"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="166dp"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:text="@string/volver"
+            android:textColor="@color/black"
+            app:backgroundTint="#268AC5" />
+
+        <Button
+            android:id="@+id/reset2"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="166dp"
+            android:layout_height="wrap_content"
+            android:text="@string/reset"
+            android:textColor="@color/black"
+            app:backgroundTint="#268AC5" />
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/metronomo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="162dp"
+        android:layout_marginLeft="162dp"
+        android:layout_marginTop="157dp"
+        android:layout_marginEnd="192dp"
+        android:layout_marginRight="192dp"
+        android:layout_marginBottom="190dp"
+        android:text="@string/metronomo"
+        android:textColor="@color/black"
+        android:textSize="34dp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editbeat" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3E0DB"
+    tools:context=".Basedatos">
+
+    <TextView
+        android:id="@+id/codigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/codigo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <TextView
+        android:id="@+id/cancion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/cancion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/codigo" />
+
+    <TextView
+        android:id="@+id/autor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/autor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.106"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cancion" />
+
+    <EditText
+        android:id="@+id/editcodigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.811"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <EditText
+        android:id="@+id/editcancion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.808"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editcodigo" />
+
+    <EditText
+        android:id="@+id/editautor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.808"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editcancion" />
+
+    <EditText
+        android:id="@+id/visor2"
+        android:layout_width="316dp"
+        android:layout_height="139dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginLeft="59dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginRight="58dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/borrar" />
+
+
+    <Button
+        android:id="@+id/grabar"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/grabar"
+        android:textColor="@color/black"
+        app:backgroundTint="#268AC5"
+        app:layout_constraintBottom_toTopOf="@+id/visor2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/listar"
+        style="@style/Widget.AppCompat.Button.Colored"
+
+        android:layout_width="105dp"
+
+        android:layout_height="wrap_content"
+
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/listar"
+        android:textColor="@color/black"
+        app:backgroundTint="#268AC5"
+        app:layout_constraintBottom_toTopOf="@+id/visor2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/borrar"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/borrar"
+        android:textColor="@color/black"
+        app:backgroundTint="#268AC5"
+        app:layout_constraintBottom_toTopOf="@+id/visor2"
+        app:layout_constraintEnd_toStartOf="@+id/listar"
+        app:layout_constraintStart_toEndOf="@+id/grabar"
+        app:layout_constraintTop_toBottomOf="@+id/editcodigoautor" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="284dp"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.752"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.021">
+
+        <RadioButton
+            android:id="@+id/tabla1"
+            android:layout_width="97dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/cancion" />
+
+        <RadioButton
+            android:id="@+id/tabla2"
+            android:layout_width="84dp"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/autor"
+            tools:layout_editor_absoluteX="180dp"
+            tools:layout_editor_absoluteY="21dp" />
+
+        <RadioButton
+            android:id="@+id/tabla3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/tonalidad"
+            tools:layout_editor_absoluteX="292dp"
+            tools:layout_editor_absoluteY="21dp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/codigoautor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="@string/codigo_autor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.124"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/autor" />
+
+    <EditText
+        android:id="@+id/editcodigoautor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.811"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editautor" />
+
+    <Button
+        android:id="@+id/volver4"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="107dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="91dp"
+        android:layout_marginEnd="152dp"
+        android:layout_marginRight="152dp"
+        android:layout_marginBottom="120dp"
+        android:text="@string/volver"
+        android:textColor="@color/black"
+        app:backgroundTint="#268AC5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/visor2"
+        app:layout_constraintVertical_bias="0.492" />
+
+    <Button
+        android:id="@+id/limpiar"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="107dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="91dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginRight="47dp"
+        android:layout_marginBottom="120dp"
+        android:text="@string/limpiar"
+        android:textColor="@color/black"
+        app:backgroundTint="#268AC5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/volver4"
+        app:layout_constraintTop_toBottomOf="@+id/visor2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

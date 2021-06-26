@@ -1,0 +1,112 @@
+<resources>
+    <string name="app_name">TonalitySearch</string>
+    <string name="Bienvenido_a_tonitos">Bienvenido a TonalitySearch</string>
+    <string name="salir">salir</string>
+    <string name="entrar">entrar</string>
+    <string name="botondo">do</string>
+    <string name="botonre">re</string>
+    <string name="botonmi">mi</string>
+    <string name="botonfa">fa</string>
+    <string name="botonsol">sol</string>
+    <string name="botonla">la</string>
+    <string name="botonsi">si</string>
+    <string name="boton5">5</string>
+    <string name="sostenido">#</string>
+    <string name="bemol">b</string>
+    <string name="mayor">MAYOR</string>
+    <string name="numero_de_acorde">numero de acorde</string>
+    <string name="volver">volver</string>
+    <string name="calcular">calcular</string>
+    <string name="resetear">resetear</string>
+    <string name="introducir">introducir</string>
+    <string name="OK">OK</string>
+    <string name="menor">menor</string>
+    <string name="siete">7</string>
+    <string name="activity2">Calculador</string>
+    <string name="activity3">Metronomo</string>
+    <string name="activity4">Base de datos</string>
+    <string name="ayuda">"Introduzca el número de acordes en el campo adaptado NUMERO DE ACORDES y presione la tecla INTRODUCIR,no le dejará usar la tecla OK hasta que no marque número de acorde y la tecla INTRODUCIR. El sistema acepta hasta séptimas y se recuerda que el uso de acordes de quinta puede hacer variar el tono ya que no son ni mayores ni menores, SE RECOMIENDA usar acordes MAYORES y MENORES"</string>
+
+    <string name="tonalidado">La progresión esta en Do mayor o en La menor, puede usar :
+                                           pentatónica mayor de Do,
+                                         pentatónica menor de La,
+                                          grado jónico de Do mayor,
+                                          grado eólico de la menor. Recuerde que los puntos rojos
+                                          son  tónicas menores y los azules mayores</string>
+    <string name="tonalidasol">La progresión esta en Sol mayor o en Mi menor, puede usar :
+                                           pentatónica mayor de Sol,
+                                         pentatónica menor de Mi,
+                                          grado Jónico de Sol mayor,
+                                          grado Eólico de Mi menor. Recuerde que los puntos rojos
+                                          son  tónicas menores y los azules mayores</string>
+    <string name="tonalidare">La progresión esta en Re mayor o en Si menor, puede usar :
+                                           pentatónica mayor de Re,
+                                         pentatónica menor de Si,
+                                          grado Jónico de Re mayor,
+                                          grado Eólico de Si menor. Recuerde que los puntos rojos
+                                           son tónicas menores y los azules mayores</string>
+    <string name="tonalidala">La progresión esta en La mayor o en Fa# menor, puede usar :
+                                           pentatónica mayor de LA,
+                                         pentatónica menor de FA#,
+                                          grado Jónico de La mayor,
+                                          grado Eólico de Fa# menor. Recuerde que los puntos rojos
+                                           son tónicas menores y los azules mayores</string>
+    <string name="tonalidami">La progresión esta en Mi mayor o en Do# menor, puede usar :
+                                           pentatónica mayor de Mi,
+                                         pentatónica menor de Do#,
+                                          grado Jónico de Mi mayor,
+                                          grado Eólico de Do# menor. Recuerde que los puntos rojos
+                                          son  tónicas menores y los azules mayores</string>
+    <string name="tonalidasi">La progresión esta en Si mayor o en Sol# menor, puede usar :
+                                           pentatónica mayor de Si,
+                                         pentatónica menor de SOL#,
+                                          grado Jónico de Si mayor,
+                                          grado Eólico de Sol# menor. Recuerde que los puntos rojos
+                                          son  tónicas menores y los azules mayores</string>
+    <string name="tonalidafa">La progresión esta en Fa mayor o en Re menor, puede usar :
+                                           pentatónica mayor de Fa,
+                                         pentatónica menor de Re,
+                                          grado Jónico de Fa mayor,
+                                          grado Eólico de Re menor. Recuerde que los puntos rojos
+                                            son tónicas menores y los azules mayores</string>
+    <string name="tonalidasib">La progresión esta en Sib mayor o en Sol menor, puede usar :
+                                           pentatónica mayor de Sib,
+                                         pentatónica menor de Sol,
+                                          grado Jónico de Sib mayor,
+                                          grado Eólico de Sol menor. Recuerde que los puntos rojos
+                                          son tónicas menores y los azules mayores</string>
+    <string name="tonalidamib">La progresión esta en Mib mayor o en Do menor, puede usar :
+                                           pentatónica mayor de Mib,
+                                         pentatónica menor de Do,
+                                          grado Jónico de Mib mayor,
+                                          grado Eólico de Do menor. Recuerde que los puntos rojos
+                                          son tónicas menores y los azules mayores</string>
+    <string name="tonalidalab">La progresión esta en Lab mayor o en Fa menor, puede usar :
+                                           pentatónica mayor de Lab,
+                                         pentatónica menor de Fa,
+                                          grado Jónico de Lab mayor,
+                                          grado Eólico de Fa menor. Recuerde que los puntos rojos
+                                          son tónicas menores y los azules mayores</string>
+    <!-- Activity 3-->
+    <string name="tabla1">Tabla1</string>
+    <string name="tabla2">Tabla2</string>
+    <string name="tonalidad">Tonalidad</string>
+    <string name="cancion">Cancion</string>
+    <string name="codigo">Codigo</string>
+    <string name="autor">Autor</string>
+    <string name="grabar">Grabar</string>
+    <string name="borrar">Borrar</string>
+    <string name="ok2">Ok</string>
+    <string name="codigo_autor">Codigo autor</string>
+    <string name="listar">Listar</string>
+    <string name="limpiar">limpiar</string>
+    <string name="toda_la_tabla">tabla</string>
+    <!-- Activity 4-->
+    <string name="play">Play</string>
+    <string name="stop">Stop</string>
+    <string name="pausa">Pausa</string>
+    <string name="metronomo">Metronomo</string>
+    <string name="reset">Reset</string>
+    <string name="listacompleta">lista completa</string>
+
+</resources>

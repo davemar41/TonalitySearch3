@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3E0DB"
+    tools:context=".Calculador">
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="326dp"
+
+
+        android:layout_height="125dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="24dp"
+        android:background="#D6D3D3"
+        app:layout_constraintBottom_toTopOf="@+id/sostenido"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/boton72"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="65dp"
+            android:layout_height="60dp"
+            android:layout_row="1"
+            android:layout_column="2"
+
+            android:text="@string/siete"
+            android:textColor="@color/black"
+            app:backgroundTint="#268AC5" />
+
+        <Button
+            android:id="@+id/botonsol2"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="65dp"
+            android:layout_height="60dp"
+            android:layout_row="0"
+            android:layout_column="4"
+
+            android:text="@string/botonsol"
+            android:textColor="@color/black"
+            app:backgroundTint="#268AC5" />
+
+        <Button
+            android:id="@+id/botondo2"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="65dp"
+            android:layout_height="60dp"
+            android:layout_row="0"
+            android:layout_column="0"
+
+            android:text="@string/botondo"
+            android:textColor="@color/black"
+            app:backgroundTint="#268AC5" />
+
+        <Button
+            android:id="@+id/botonre2"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="65dp"
+            android:layout_height="60dp"
+            android:layout_row="0"
+            android:layout_column="1"
+
+            android:text="@string/botonre"
+
+            android:textColor="@color/black"
+            app:backgroundTint="#268AC5" />
+
+        <Button
+            android:id="@+id/botonmi2"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="65dp"
+            android:layout_height="60dp"
+            android:layout_row="0"
+            android:layout_column="2"
+
+
+            android:text="@string/botonmi"
+            android:textColor="@color/black"
+            app:backgroundTint="#268AC5" />
+
+        <Button
+            android:id="@+id/botonfa2"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="65dp"
+            android:layout_height="60dp"
+            android:layout_row="0"
+            android:layout_column="3"
+
+            android:text="@string/botonfa"
+
+            android:textColor="@color/black"
+            app:backgroundTint="#268AC5" />
+
+        <Button
+            android:id="@+id/botonsi2"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="65dp"
+            android:layout_height="60dp"
+
+            android:layout_row="1"
+            android:layout_column="4"
+
+            android:text="@string/botonsi"
+
+            android:textColor="@color/black"
+            app:backgroundTint="#268AC5" />
+
+        <Button
+            android:id="@+id/botonla2"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="65dp"
+            android:layout_height="60dp"
+            android:layout_row="1"
+            android:layout_column="0"
+
+            android:text="@string/botonla"
+            android:textColor="@color/black"
+            app:backgroundTint="#268AC5" />
+
+        <Button
+            android:id="@+id/boton5"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="65dp"
+            android:layout_height="60dp"
+            android:layout_row="1"
+            android:textColor="@color/black"
+            android:layout_column="1"
+            android:text="@string/boton5"
+            app:backgroundTint="#268AC5" />
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/sostenido"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+
+        android:text="@string/sostenido"
+        android:textColor="@color/black"
+        app:backgroundTint="#43B1E3"
+        app:layout_constraintEnd_toStartOf="@+id/bemol"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
+
+    <Button
+        android:id="@+id/bemol"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+
+        android:text="@string/bemol"
+
+        android:textColor="@color/black"
+        app:backgroundTint="#43B1E3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
+
+    <Button
+        android:id="@+id/mayor"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginRight="43dp"
+
+        android:text="@string/mayor"
+
+        android:textColor="@color/black"
+
+        app:backgroundTint="#43B1E3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/bemol"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
+
+    <EditText
+        android:id="@+id/visor"
+        android:layout_width="294dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="45dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sostenido" />
+
+    <GridLayout
+        android:id="@+id/gridLayout2"
+        android:layout_width="319dp"
+
+
+        android:layout_height="99dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginRight="43dp"
+        android:layout_marginBottom="137dp"
+        android:background="#D6D3D3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/visor">
+
+
+        <Button
+            android:id="@+id/intro"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+
+            android:text="Introducir"
+            android:textColor="@color/black"
+            app:backgroundTint="#43B1E3" />
+
+        <Button
+            android:id="@+id/ok"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+
+            android:text="OK"
+            android:textColor="@color/black"
+            app:backgroundTint="#43B1E3" />
+
+        <Button
+            android:id="@+id/calcular"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="0"
+
+            android:text="Calcular"
+
+            android:textColor="@color/black"
+            app:backgroundTint="#43B1E3" />
+
+        <Button
+            android:id="@+id/delete"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="160dp"
+
+            android:layout_height="wrap_content"
+
+
+            android:text="Borrar"
+            android:textColor="@color/black"
+            app:backgroundTint="#43B1E3" />
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/volver"
+
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:layout_marginLeft="125dp"
+
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="126dp"
+        android:layout_marginRight="126dp"
+        android:layout_marginBottom="80dp"
+
+        android:text="@string/volver"
+        android:textColor="@color/black"
+
+        app:backgroundTint="#43B1E3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout2" />
+
+    <Button
+        android:id="@+id/menor"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="162dp"
+        android:layout_marginLeft="162dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="161dp"
+        android:layout_marginRight="161dp"
+
+        android:text="@string/menor"
+        android:textColor="@color/black"
+
+        app:backgroundTint="#43B1E3"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bemol" />
+
+    <TextView
+        android:id="@+id/numeroacorde"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginLeft="116dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginBottom="55dp"
+        android:text="@string/numero_de_acorde"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/visor"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        style="@style/Widget.MaterialComponents.TimePicker.Display.TextInputEditText"
+        android:layout_width="61dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginRight="90dp"
+        android:layout_marginBottom="35dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="23dp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toEndOf="@+id/numeroacorde"
+        app:layout_constraintTop_toBottomOf="@+id/visor"
+        app:layout_constraintVertical_bias="0.142" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
